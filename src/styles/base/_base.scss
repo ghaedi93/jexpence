@@ -1,0 +1,20 @@
+html{
+    //this multiply font all font sizes to .625 means that 16 * .625 = 10 so every rem equals to 10 any
+    //its so easy to calculate them for instance 22pixel eqauls to 2.2 rem 
+    font-size: 62.5%;
+}
+body {
+    background: white;
+    margin:0;
+    //when you put some fonts in this order with , seprating them it means the is an order if the fond wasn't present in the clients system next one get used
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+}
+
+button {
+    cursor: pointer;
+}
+button:disabled{
+    cursor: default;
+}
+
