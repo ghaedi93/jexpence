@@ -1,5 +1,4 @@
 import React         from 'react';
-import ReactDOM      from 'react-dom';
 //BrowserRouter is to create router once and router is for every page 
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 
@@ -52,7 +51,7 @@ const NotFoundPage=()=>(
 //in order to make use of 404 pages we have to import switch 
 //switch go through route maps and stops the moment it get the first match so it does'nt get afterward matchs
 //BrowserRouter should only have one child so we have to put a div in it 
-const routes = (
+const AppRouter = (
     <BrowserRouter>
     <div>
         <Header/>
@@ -67,4 +66,4 @@ const routes = (
          
     </BrowserRouter>
 );
-export default routes;
+export default AppRouter;
