@@ -1,6 +1,6 @@
 import React                                         from 'react';
 //BrowserRouter is to create router once and router is for every page 
-import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Header                                        from '../components/header';
 import ExpenseDashboardPage                          from '../components/expenseDashboardPage';       
 import AddExpensePage                                from '../components/addExpensePage';
