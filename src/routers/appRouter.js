@@ -1,12 +1,12 @@
 import React                                         from 'react';
 //BrowserRouter is to create router once and router is for every page 
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
-import Header                                        from './../components/header';
-import ExpenseDashboardPage                          from './../components/expenseDashboardPage';       
-import AddExpensePage                                from './../components/addExpensePage';
-import EditExpensePage                               from './../components/editExpensePage';
-import HelpPage                                      from './../components/helpPage';
-import NotFoundPage                                  from './../components/notFoundPage';
+import Header                                        from '../components/header';
+import ExpenseDashboardPage                          from '../components/expenseDashboardPage';       
+import AddExpensePage                                from '../components/addExpensePage';
+import EditExpensePage                               from '../components/editExpensePage';
+import HelpPage                                      from '../components/helpPage';
+import NotFoundPage                                  from '../components/notFoundPage';
 
 //we add exact={true} to return ExpenseDashboardPage exactly when / is not when /create of others get called 
 //if do not define exact={true} the component of path / will be loadded in every single path 
