@@ -13,6 +13,7 @@ import NotFoundPage                                  from '../components/notFoun
 //in order to make use of 404 pages we have to import switch 
 //switch go through route maps and stops the moment it get the first match so it does'nt get afterward matchs
 //BrowserRouter should only have one child so we have to put a div in it 
+//props like :id only can be pass to those components that are invoked by a <Route>
 const AppRouter = (
     <BrowserRouter>
     <div>
@@ -20,7 +21,7 @@ const AppRouter = (
         <Switch>
             <Route path="/"         component={ExpenseDashboardPage} exact={true} /> 
             <Route path="/create"   component={AddExpensePage} />
-            <Route path="/edit"     component={EditExpensePage} />
+            <Route path="/edit/:id"     component={EditExpensePage} />
             <Route path='/help'     component={HelpPage}/>
             <Route                  component={NotFoundPage}/>
         </Switch>  

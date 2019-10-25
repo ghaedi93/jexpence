@@ -9,7 +9,6 @@ const Header = ()=>(
        
             <NavLink to="/"       activeClassName="isActive" exact={true}>Home   </NavLink>
             <NavLink to="/create" activeClassName="isActive" exact={true}>Create </NavLink>
-            <NavLink to="/edit"   activeClassName="isActive" exact={true}>Edit   </NavLink>
             <NavLink to="/help"   activeClassName="isActive" exact={true}>Help   </NavLink>
 
     </div>
